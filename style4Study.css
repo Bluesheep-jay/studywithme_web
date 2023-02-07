@@ -3,70 +3,103 @@
     --yellow-add:rgb(197, 182, 42);
     --greenLINK:rgb(31, 190, 116);
 }
-
+body{
+    color: rgb(156, 156, 156);
+    margin:0;
+}
+div.content{
+    margin:10px;
+}
 .logo{
     border: 2px solid #d6dbdd;
     padding:10px;
-    margin-left: -7px;
+    margin-left: -2px;
     margin-top:-9px;
+    margin-right: -2px;
 }
 p{
     font-size : 18px;
 }
-ul.list{
-    font-size:18px;
+*{
+    box-sizing:border-box;
 }
-div#list_content{
-    border:2px solid var(--blue1);
-    width:240px;
-    height:100px;
+.navbar{
+    display:flex;
+    background-color: #0b6969;;
+}
+.navbar a{
+    font:17px;
+    overflow:hidden;
+    font-family:"Source San Pro",sans-serif;
+    color:white;
+    padding: 10px 15px;
+    text-decoration:none;
+    text-align:center;
+}
+.navbar > a:hover{
+    background-color: #ddd;
+    color:#0b6969;
+}
 
-}
-h2#why{
+#why >h2{
     text-align: left;
     margin-left: 20%;
-    margin-top:100px;
+    margin-top:20px;
     color: var(--greenLINK);
     font-size: 25px;
 }
-address{
-    border: 2px solid whitesmoke;
-    margin-left:63%;
-    padding-left:3px;
-    padding-top: 5px;
-    font-family:courier;
-    width:240px;
-    height:98px;
+#why > blockquote{
+    margin-left:20%;
+    margin-right:30%;
+    font-size:16px; 
+    font-family:courier; 
+    color:rgb(34, 133, 200);
 }
-
 
 table#table1{
     font-family: Arial, Helvetica, sans-serif;
+    color:black
 }
 #table1 td, #table1 th{
       /* border: 1px solid rgb(203, 66, 207); */
-    border: 2px solid;
+    border: 3px solid;
     border-color: white;
     border-radius: 10px;
-    background-color:rgb(69, 202, 158);
+    padding: 8px;
 }
-
-table#table_covid{
-    border-collapse: collapse;
-    
-}
-
+#table1 tr{ background-color:rgb(69, 202, 158);}
+#table1 tr:hover{ background-color:#b7e0e0;}
+#table_covid{ border-collapse: collapse; }
 #table_covid th, #table_covid td {
     font-family:'Courier New', Courier, monospace;
     border: 2px solid rgb(73, 72, 72);
-    background-color: rgb(255, 255, 255);
     padding: 8px;
 }
+#table_covid th{ color:black; }
 #table_covid tr{
     height:30px;
-
+    color: rgb(116, 116, 116);
+}
+#table_covid tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4)
 }
 
+.foo {
+    display:flex;
+    justify-content:flex-end;
+    border: 2px solid rgb(74, 129, 155);
+    padding: 0;
+    margin: -10px;
+    background: #0b6969;
+}
+/* .foo::after{ content:""; display:table; clear:both; } */
+address{
+    padding:6px;
+    padding-right: 30px;
+    font-family:courier;
+    text-align: left;
+    color:white;
+}
 html{overflow-x:hidden;}
 
    

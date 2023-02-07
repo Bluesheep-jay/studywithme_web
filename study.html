@@ -7,46 +7,46 @@
         address{
             font-style:italic;
         }
-        a link{
-            color:rgb(5, 29, 29);
-        }
     </style>
     <head>
         <title>STUDY HTML-CSS</title>
         <link rel = "stylesheet" href="style4Study.css">
         <link rel = "icon" href="/Motivation_web/images/favicon-32x32.png">
         <meta name="description" content="Introduction to HTML">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
     <div class="logo">
-        <a href="https://www.youtube.com/@jayskullz">
-            <img src ="images/studywithme2.png" style="width:300px ">
+        <a href="https://www.youtube.com/@jayskullz" target="_blank">
+            <img src ="/Motivation_web/images/studywithme3.png" style="width:300px " >
         </a>
     </div>
-    <div>
-    <h2 id = "why">Why i work so hard? </h2>
-    <blockquote style="margin-left:20%; margin-right:30%;font-size:16px; font-family:courier; color:rgb(34, 133, 200)"cite ="https://www.linkedin.com/pulse/why-do-you-work-so-hard-abby-peterson#:~:
-            text=I%20work%20hard%20because%20it%20is%20part%20of,any%20one%20or%20even%20all%20of%20those%20elements.">
-        <q>I work hard because it is part of living my life with respect.
-        Respect for my trade, my workplace, the people I work for and with, those I serve as a servant-leader and even respect for myself.
-        Anything less than my best foot forward would be dropping the ball on any one or even all of those elements.</q>
-    </blockquote>
+ 
+    <div class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+      
     </div>
-    <p>List page contents</p> 
-    <div id="list_content">
-        <ul>  
-            <li><p> <a href= "#howicando">How i can do?</a></p></li>
-            <li><p> <a href="#javaScript">study JavaScript</a></p></li>
-        </ul>
-
+    <div id="why">
+        <h2>Why i work so hard? </h2>
+        <blockquote cite ="https://www.linkedin.com/pulse/why-do-you-work-so-hard-abby-peterson#:~:
+            text=I%20work%20hard%20because%20it%20is%20part%20of,any%20one%20or%20even%20all%20of%20those%20elements.">
+            <q>I work hard because it is part of living my life with respect.
+            Respect for my trade, my workplace, the people I work for and with, those I serve as a servant-leader and even respect for myself.
+            Anything less than my best foot forward would be dropping the ball on any one or even all of those elements.</q>
+        </blockquote>
+    </div>
+  
     </body>
     </div>
-
-  
+    <div class="content">
         <h2 id="howicando" class = "sub-heading">How do i do that?</h2>
         <ul class ="list">
-            <li class = "list-item">Avoid any things that<abbr style="color:rgb(161, 196, 248) "> distract attention</abbr> from me</li>
+            <li class = "list-item">Avoid any things that<abbr style="color:rgb(50, 117, 216) "> distract attention</abbr> from me</li>
             <ul>
                 <li class = "sub-item">Tiktok</li>
                 <li class = "sub-item">FaceBook</li>
@@ -56,8 +56,9 @@
             <li class = "list-item">Deep work</li>
             <li class = "list-item">Reading more books</li>
         </ul>
-    
+    </div>
     <br>
+    <div class="content">
     <h2>Things i use to study </h2>
     <img src="/Motivation_web/images/computer.jpg" alt="something i need" usemap="#work" style="width:490px; height: 320px">
     <map name="work">
@@ -69,8 +70,10 @@
         <area shape ="circle" coords="405,73,27" alt="coffee and book" href="https://www.booksandcoffee.fr/" target="_blank" onclick = "coffeeFunction()">
         <area shape ="rect"  coords="122,54, 198,91" href="https://support.apple.com/kb/SP743?locale=en_US" target="_blank">
     </map>
+    </div>
 <!--JavaScript-->
     <br>
+    <div class="content">
     <h2 id="javaScript">HTML combine with JavaScript. What can JS do?</h2>
     <p id = "demo">JavaScript can change HTML content</p>
     <button type = "button" onclick = "myFunction()"> Click me!</button>
@@ -105,9 +108,11 @@
             alert("You clicked the coffee cup!");
         }
     </script>
+    </div>
     <!-- javascript-->
     <br>
     <br>
+    <div class="content">
     <table id="table1" >
         <caption style ="font-size: 20px;"><b>Top 3 programming languages in 2022</b></caption>
         <thead>
@@ -119,17 +124,17 @@
         </thead>
         <tbody >
             <tr>
-                <td>#1</td>
+                <td style="text-align:center">#1</td>
                 <td>Python</td>
                 <td>JavaScript</td>
             </tr>
             <tr>
-                <td>#2</td>
+                <td style="text-align:center">#2</td>
                 <td>Java</td>
                 <td>HTML/CSS</td>
             </tr>
             <tr>
-                <td>#3</td>
+                <td style="text-align:center">#3</td>
                 <td>JavaScript</td>
                 <td>SQL</td>
             </tr>
@@ -140,8 +145,10 @@
             </tr>
         </tfoot>   
     </table>
+    </div>
     <br>
     <br>
+    <div class="content">
     <table id="table_covid" width="100%">
         <caption>REPORT CORONAVIRUS CASES</caption>
         <thead>
@@ -213,16 +220,17 @@
 
         </tbody>
     </table>
+    </div>
     <br>
-    <address>
-        Written by Hu Khan.<br>
-        Visit us at:<br>
-        <a href = "mailto:daohuukhang007@gmail.com">Hu Khan</a><br>
-        PhuocLong, BacLieu<br>
-        VietNam.
-    </address>
+    <footer class="foo">
+        <address id="addr">
+            Written by Hu Khan.<br>
+            Visit us at:<br>
+            <a style="text-decoration: none;color:rgb(248, 193, 54);"href = "mailto:daohuukhang007@gmail.com"><b>Hu Khan</b></a><br>
+            PhuocLong, BacLieu<br>
+            VietNam.
+        </address>
+    </footer>
     <script src = "script.js"></script>
-    </body>
-   
 
 </html>
