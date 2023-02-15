@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang = "en">
-    <style>
-        html{
-            font-size:100%;
-        }
-        address{
-            font-style:italic;
-        }
-    </style>
     <head>
         <title>STUDY HTML-CSS</title>
         <link rel = "stylesheet" href="style4Study.css">
@@ -17,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body>
+    <body class="background">
     <div class="logo">
         <a href="https://www.youtube.com/@jayskullz" target="_blank">
             <img src ="/Motivation_web/images/studywithme3.png" style="width:300px " >
@@ -29,199 +21,35 @@
         <a href="#">ABOUT</a>
         <a href="#">LINK</a>
         <a href="#">LINK</a>
-      
+        <a class="nav-link link5" href="#">LINK</a>
+        <a class="nav-link link6" href="#">LINK</a>
+        <a class="nav-link link7" href="#">LINK</a>
+        <a class="nav-link link8" href="#">LINK</a>
+        <a class="nav-link link9" href="#">LINK</a>
     </div>
-    <div id="why">
-        <h2>Why i work so hard? </h2>
-        <blockquote cite ="https://www.linkedin.com/pulse/why-do-you-work-so-hard-abby-peterson#:~:
-            text=I%20work%20hard%20because%20it%20is%20part%20of,any%20one%20or%20even%20all%20of%20those%20elements.">
-            <q>I work hard because it is part of living my life with respect.
-            Respect for my trade, my workplace, the people I work for and with, those I serve as a servant-leader and even respect for myself.
-            Anything less than my best foot forward would be dropping the ball on any one or even all of those elements.</q>
-        </blockquote>
+    <div class="container-twocol">
+        <div class="col-left">
+            <div id="why">
+                <h2>Why i work so hard? </h2>
+                <blockquote cite ="https://www.linkedin.com/pulse/why-do-you-work-so-hard-abby-peterson#:~:
+                text=I%20work%20hard%20because%20it%20is%20part%20of,any%20one%20or%20even%20all%20of%20those%20elements.">
+                <q>I work hard because it is part of living my life with respect.
+                Respect for my trade, my workplace, the people I work for and with, those I serve as a servant-leader and even respect for myself.
+                Anything less than my best foot forward would be dropping the ball on any one or even all of those elements.</q>
+                </blockquote>
+            </div>
+            <div class="col-left2">
+                <h2 class=""><b>Skills</b></h2>
+            </div>
+        </div>
+        <div class="col-right container">
+            <div class="col-margin-bottom colright colright1">
+                <div> SOME TEXT...</div>
+            </div>
+            <div class="colright colright2"> SOME TEXT2...</div>
+        </div>
     </div>
-  
     </body>
-    </div>
-    <div class="content">
-        <h2 id="howicando" class = "sub-heading">How do i do that?</h2>
-        <ul class ="list">
-            <li class = "list-item">Avoid any things that<abbr style="color:rgb(50, 117, 216) "> distract attention</abbr> from me</li>
-            <ul>
-                <li class = "sub-item">Tiktok</li>
-                <li class = "sub-item">FaceBook</li>
-                <li class = "sub-item">Game</li>
-                <p style="margin-top: 0px;">. . .</p>
-            </ul>
-            <li class = "list-item">Deep work</li>
-            <li class = "list-item">Reading more books</li>
-        </ul>
-    </div>
-    <br>
-    <div class="content">
-    <h2>Things i use to study </h2>
-    <img src="/Motivation_web/images/computer.jpg" alt="something i need" usemap="#work" style="width:490px; height: 320px">
-    <map name="work">
-        <area shape = "poly" coords="123,109, 149,173, 147,287, 319,283, 347,110" alt="computer"
-            href= "https://support.hp.com/in-en/product/hp-laptop-pc-15s-du3000/37506295/model/37506298" target="_self">
-        <area shape = "poly" coords="62,140, 50,145, 40,136, 26,116, 24,113, 28,86, 33,68, 47,52, 67,52, 88,51, 106,72, 
-                                        114,114, 113,116, 88,146, 72,141, 74,122, 80,103, 105,105, 94,76, 70,64, 54,66, 37,86, 34,107, 50,103, 60,111" 
-            alt="headphone" href="https://www.sony.com/electronics/support/product/wh-ch400/manuals" target="_blank"> 
-        <area shape ="circle" coords="405,73,27" alt="coffee and book" href="https://www.booksandcoffee.fr/" target="_blank" onclick = "coffeeFunction()">
-        <area shape ="rect"  coords="122,54, 198,91" href="https://support.apple.com/kb/SP743?locale=en_US" target="_blank">
-    </map>
-    </div>
-<!--JavaScript-->
-    <br>
-    <div class="content">
-    <h2 id="javaScript">HTML combine with JavaScript. What can JS do?</h2>
-    <p id = "demo">JavaScript can change HTML content</p>
-    <button type = "button" onclick = "myFunction()"> Click me!</button>
-    <br>
-    <br>
-    <img id = "myImage" src = "/Motivation_web/images/joker.jpg" style = "width:200px; float:left; margin-right: 15px; ">
-    <br>
-    
-    <button onclick = 'document.getElementById("myImage").src = "/Motivation_web/images/joker.jpg"'>Cool</button><br>
-    <button onclick = "document.getElementById('myImage').src = '/Motivation_web/images/jokerDance.jpg'">Dancin</button><br>
-    <button onclick = "document.getElementById('myImage').src = '/Motivation_web/images/jokerDance2.jpg'">Dancin2</button><br>
-    <button onclick = "document.getElementById('myImage').src = '/Motivation_web/images/jokerVsPeter.jpg'">DancinvsPeter</button><br>
-
-    <br>
-    <br>
-    <p id = "demo2" style = "display:none">Surprise! </p>
-    <button onclick = "document.getElementById('demo2').style.display = 'block'">Click to surprise </button>
-    <button onclick = "document.getElementById('demo2').style.display = 'none'">Click to hide</button>
-    <br>
-    <p id = "demo3"></p>
-    <script>
-    document.getElementById("demo3").innerHTML = "* writing by 'document.getElementById(id).innerHTML'" ;
-    document.write("* writing by 'document.write'"); 
-    // window.alert("Alert Box ")
-    console.log("Debugging!");
-    </script>
-    <h3>The window.print() Method</h3>
-    <p>Click the button to print the current page.</p>
-    <button onclick = "window.print()">Print this page</button>
-    <script>
-        function coffeeFunction(){
-            alert("You clicked the coffee cup!");
-        }
-    </script>
-    </div>
-    <!-- javascript-->
-    <br>
-    <br>
-    <div class="content">
-    <table id="table1" >
-        <caption style ="font-size: 20px;"><b>Top 3 programming languages in 2022</b></caption>
-        <thead>
-            <tr>
-                <th>Position</th>
-                <th>PYPL ranking September 2022</th>
-                <th>Stack Overflow's Developer Survey 2022</th>
-            </tr>
-        </thead>
-        <tbody >
-            <tr>
-                <td style="text-align:center">#1</td>
-                <td>Python</td>
-                <td>JavaScript</td>
-            </tr>
-            <tr>
-                <td style="text-align:center">#2</td>
-                <td>Java</td>
-                <td>HTML/CSS</td>
-            </tr>
-            <tr>
-                <td style="text-align:center">#3</td>
-                <td>JavaScript</td>
-                <td>SQL</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan = "3" style ="text-align: center;">No Matters</td>
-            </tr>
-        </tfoot>   
-    </table>
-    </div>
-    <br>
-    <br>
-    <div class="content">
-    <table id="table_covid" width="100%">
-        <caption>REPORT CORONAVIRUS CASES</caption>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Country Other</th>
-                <th>Total Cases</th>
-                <th>Total Deaths</th>
-                <th>Total Recovered</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="font-weight:bold"> </td>
-                <td style="font-weight:bold">World</td>
-                <td style="font-weight:bold">672,357,831</td>
-                <td style="font-weight:bold">6,737,386</td>
-                <td style="font-weight:bold">643,842,517</td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold">1</td>
-                <td style="font-weight:bold">USA</td>
-                <td style="font-weight:bold">103,701,168</td>
-                <td style="font-weight:bold">1,127,059</td>
-                <td style="font-weight:bold">100,619,071</td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold">2</td>
-                <td style="font-weight:bold">India</td>
-                <td style="font-weight:bold">44,681,921</td>
-                <td style="font-weight:bold">530,733</td>
-                <td style="font-weight:bold">44,149,228</td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold">10</td>
-                <td style="font-weight:bold">Russia</td>
-                <td style="font-weight:bold">21,894,157</td>
-                <td style="font-weight:bold">394,694</td>
-                <td style="font-weight:bold">21,306,526</td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold">13</td>
-                <td style="font-weight:bold">VietNam</td>
-                <td style="font-weight:bold">11,526,284</td>
-                <td style="font-weight:bold">43,186</td>
-                <td style="font-weight:bold">10,612,361</td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-                <td style="font-weight:bold">...</td>
-            </tr>
-
-        </tbody>
-    </table>
-    </div>
-    <br>
     <footer class="foo">
         <address id="addr">
             Written by Hu Khan.<br>
